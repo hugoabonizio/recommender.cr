@@ -1,0 +1,13 @@
+name: recommender
+version: 0.1.0
+
+authors:
+  - Hugo Abonizio <hugo_abonizio@hotmail.com>
+
+crystal: 0.23.1
+
+dependencies:
+  stemmer:
+    github: hugoabonizio/stemmer.cr
+
+license: MIT
