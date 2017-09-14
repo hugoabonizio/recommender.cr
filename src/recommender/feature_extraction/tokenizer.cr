@@ -8,7 +8,7 @@ module Recommender
       def tokenize(document, stemming = true)
         doc = document
           .downcase
-          .split(/(\s)|([\[\]\(\)])/)
+          .split(/(\s)|([\[\]\(\)\/\-\.])/)
           .map { |s| s.gsub(/[^\w\s]/, "") }
           .reject { |s| s.empty? || s.blank? }
           .map(&.chomp)
